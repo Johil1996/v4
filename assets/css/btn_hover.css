@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+
+body::-webkit-scrollbar
+{
+   width: 10px;
+}
+
+body::-webkit-scrollbar-thumb
+{
+   height: 80px;
+   background: #006600;
+   border: 8px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:active
+{
+    background: #003349;
+}
+
+
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .icon{
+  left: -10px;
+  margin: 0 2px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon span{
+  display: block;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon span i{
+  line-height: 30px;
+  font-size: 15px;
+}
+.wrapper .icon .tooltip{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  color: #fff;
+  width: 100px;
+  background: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-family: sans-serif;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover .tooltip{
+  top: -40px;
+  opacity: 1;
+  pointer-events: auto;
+  width: 100px;
+}
+.icon .tooltip:before{
+  position: absolute;
+  content: "";
+  background: #fff;
+  left:50%;
+  bottom: -6px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.wrapper .icon:hover span{
+  color: #fff;
+}
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip{
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+}
+.wrapper .playlist:hover span,
+.wrapper .playlist:hover .tooltip,
+.wrapper .playlist:hover .tooltip:before{
+  background: #000099;
+}
+.wrapper .site-spots:hover span,
+.wrapper .site-spots:hover .tooltip,
+.wrapper .site-spots:hover .tooltip:before{
+  background: #006600;
+}
+.wrapper .filter:hover span,
+.wrapper .filter:hover .tooltip,
+.wrapper .filter:hover .tooltip:before{
+  background: #006600;
+}
+.wrapper .add-site:hover span,
+.wrapper .add-site:hover .tooltip,
+.wrapper .add-site:hover .tooltip:before{
+  background: #000099;
+}
+.wrapper .add-playlist:hover span,
+.wrapper .add-playlist:hover .tooltip,
+.wrapper .add-playlist:hover .tooltip:before{
+  background: #000099;
+}
+.wrapper .ads-spots:hover span,
+.wrapper .ads-spots:hover .tooltip,
+.wrapper .ads-spots:hover .tooltip:before{
+  background: #006600;
+}
+.wrapper .delete:hover span,
+.wrapper .delete:hover .tooltip,
+.wrapper .delete:hover .tooltip:before{
+  background: red;
+}
+.wrapper .excel:hover span,
+.wrapper .excel:hover .tooltip,
+.wrapper .excel:hover .tooltip:before{
+  background: #006600;
+}
+.wrapper .search:hover span,
+.wrapper .search:hover .tooltip,
+.wrapper .search:hover .tooltip:before{
+  background: #333;
+}
+.wrapper .deactivate:hover span,
+.wrapper .deactivate:hover .tooltip,
+.wrapper .deactivate:hover .tooltip:before{
+  background: red;
+}
+.wrapper .time-on-off:hover span,
+.wrapper .time-on-off:hover .tooltip,
+.wrapper .time-on-off:hover .tooltip:before{
+  background: #333;
+}
+
